@@ -40,7 +40,7 @@ class _ShowListProductState extends State<ShowListProduct> {
       child: ListView.builder(
         itemCount: productModels.length,
         itemBuilder: (BuildContext context, int index) {
-            return Dismissible(key: Key(productModels[index].name), child: null)
+            return Dismissible(key: Key(productModels[index].name), child: null);
 
           //return  Text(productModels[index].name);
         },
