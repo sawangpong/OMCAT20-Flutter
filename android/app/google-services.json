@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1054757463439",
+    "firebase_url": "https://omcat20.firebaseio.com",
+    "project_id": "omcat20",
+    "storage_bucket": "omcat20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054757463439:android:048039ad2daeb1070417fa",
+        "android_client_info": {
+          "package_name": "com.oldmoonth.omcat20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054757463439-et4kfs7moekt3b87jkara5cbhgsmkrqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7Cpu4yWWab22DTtYIt1R__vFkKZ6KPX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054757463439-et4kfs7moekt3b87jkara5cbhgsmkrqg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
