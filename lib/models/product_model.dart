@@ -4,6 +4,7 @@ class ProductModel {
   String name;
   String detail;
   String pathImage;
+  String image;
 
   // Method 
 
@@ -14,6 +15,7 @@ class ProductModel {
 
     name = map['Name'];
     detail = map['Detail'];
+    image = map['Image'];
     pathImage = map['PathImage'];
   }
 }
