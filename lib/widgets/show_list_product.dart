@@ -38,7 +38,7 @@ class _ShowListProductState extends State<ShowListProduct> {
     return Container(
       padding: EdgeInsets.all(5.0),
       width: MediaQuery.of(context).size.width * 0.5,
-      height: MediaQuery.of(context).size.width * 0.5,
+      height: MediaQuery.of(context).size.width * 0.7,
       child: Image.network(
         productModels[index].pathImage,
         scale: 1.0,
@@ -78,8 +78,8 @@ class _ShowListProductState extends State<ShowListProduct> {
 
   Widget showText(int index) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.5,
-      height: MediaQuery.of(context).size.width * 0.5,
+      width: MediaQuery.of(context).size.width * 0.4,
+      height: MediaQuery.of(context).size.width * 0.4,
       child: Column(
         children: <Widget>[
           showName(index),
@@ -101,11 +101,20 @@ class _ShowListProductState extends State<ShowListProduct> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: ListView.builder(
+      child: ListView.separated(
         itemCount: productModels.length,
         itemBuilder: (BuildContext context, int index) {
           return showListView(index);
         },
+        separatorBuilder: (context, index) => Divider(
+          height: 5.0,
+          thickness: 2.0,
+          indent: 15.0,
+          endIndent: 5.0,
+          color: Colors.grey.shade400,
+        ),
+        scrollDirection: Axis.vertical,
+        addAutomaticKeepAlives: true,
       ),
     );
   }
